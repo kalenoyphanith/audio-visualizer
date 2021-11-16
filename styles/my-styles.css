@@ -1,0 +1,159 @@
+/* https://fonts.google.com/?category=Display&selection.family=Baloo+Bhai|Comfortaa:500 */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Comfortaa:500&display=swap');
+
+/* 
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Comfortaa', cursive;
+*/
+
+section,
+div p {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.5em;
+    color: #3B3B3B;
+}
+
+section p {
+    font-size: 1em;
+    color: #3B3B3B;
+}
+
+label {
+    font-family: 'Comfortaa', cursive;
+    color: #3B3B3B;
+    padding: 5px;
+}
+
+body {
+    background-color: #FAF3F1;
+}
+
+checkBox {
+    padding-top: 10px;
+}
+
+#controls {
+    float: right;
+    position: relative;
+    right: 7%;
+}
+
+#main-content {
+    margin: 0px;
+    background-color: #FAF3F1;
+    padding: 15px;
+}
+
+/* code from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
+html {
+    scroll-behavior: smooth;
+}
+
+canvas {
+    padding: 0;
+}
+
+h1 {
+    letter-spacing: 1.5px;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2em;
+    /*    https://www.html5rocks.com/en/tutorials/canvas/texteffects/#toc-text-shadows*/
+    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan;
+}
+
+h2 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+}
+
+
+p {
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 5px;
+    line-height: 1.6;
+
+}
+
+details p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    padding-right: 55%;
+}
+
+#track {
+    padding-top: 15px;
+}
+
+main details {
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    bottom: 20px;
+    color: #B6B6B6;
+    cursor: pointer;
+
+}
+
+#playButton,
+#fsButton {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #3B3B3B;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#playButton:hover,
+#fsButton:hover {
+    border-color: darkred;
+    background-color: white;
+    color: darkred;
+}
+
+#playButton:active {
+    /*    border-color: firebrick;*/
+    border-color: #3B3B3B;
+    background-color: white;
+    color: firebrick;
+}
+
+button[data-playing="yes"]:after {
+    content: "Pause";
+}
+
+button[data-playing="no"]:after {
+    content: "Play";
+}
+
+details a {
+    text-decoration: none;
+    color: firebrick;
+}
+
+details a:visited {
+    color: darkred;
+}
+
+details a:hover {
+    color: red;
+}
+
+details a:active {
+    color: indianred;
+}
+
+details p {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: .5em;
+    padding-top: 5%;
+    color: #B6B6B6;
+}

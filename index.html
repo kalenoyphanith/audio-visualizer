@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Métropole Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="styles/my-styles.css">
+    <script src="./src/loader.js" type="module"></script>
+
+</head>
+
+<body>
+    <canvas width="800" height="500"></canvas>
+    <!--    <canvas width="500" height="400"></canvas>-->
+
+    <div id="controls">
+
+        <section>
+            Volume<input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+            <span><label id="volumeLabel"></label></span>
+        </section>
+        <section id="mode">
+            Bass
+            <input type="range" min="1" max="15" value="2" step="1" id="lowshelfSlide"><span><label id="lowshelfLabel"></label></span>
+        </section>
+        <section>
+            Size <input type="range" id="sizeSlider" min="1.5" max="15" value="10" step="1"><span><label id="sizeLabel"></label></span>
+        </section>
+
+        <hr>
+
+        <div id="checkBox">
+            <section>
+                <span><input type="checkbox" id="rectCB"><label for="rectCB">Speaker</label></span>
+                <span><input type="checkbox" id="barsCB"><label for="barsCB">Bars</label></span>
+                <span><input type="checkbox" id="circlesCB"><label for="circlesCB">Circles</label></span>
+                <span><input type="checkbox" id="quadCB"><label for="barsCB">Lines</label></span>
+            </section>
+        </div>
+        <hr>
+        <div id="radioButtons">
+            <p>Filters:</p>
+            <input type="radio" id="noneCB" name="filter" checked>
+            <label for="noneCB">None</label><br>
+            <input type="radio" id="noiseCB" name="filter">
+            <label for="noiseCB">Noise</label><br>
+            <input type="radio" id="invertCB" name="filter">
+            <label for="invertCB">Inversion</label><br>
+            <input type="radio" id="embossCB" name="filter">
+            <label for="embossCB">Emboss</label>
+        </div>
+        <hr>
+        <div id="form">
+            <p>Form:</p>
+            <input type="radio" id="wave" name="data" value="wave" checked>
+            <label for="wave">Wave</label><br>
+            <input type="radio" id="freq" name="data" value="freq">
+            <label for="freq">Frequency</label><br>
+        </div>
+
+
+    </div>
+    <div id="main-content">
+
+        <section>
+            <button id="playButton" data-playing="no"></button>
+            <button id="fsButton">Full Screen</button>
+        </section>
+
+        <div id="track">
+            <section>
+                Track: <label>
+                    <select id="trackSelect">
+                        <option value="audio/Daybreak.wav" selected>Daybreak</option>
+                        <option value="audio/Le Bleury.wav">Le Bleury</option>
+                        <option value="audio/New Space.wav">New Space</option>
+                        <option value="audio/Velours.wav">Velours</option>
+                        <option value="audio/Interlude.wav">Interlude</option>
+                        <option value="audio/Ouverture.wav">Ouverture</option>
+                    </select>
+                </label>
+            </section>
+        </div>
+
+        <main>
+            <h1>Métropole Visualizer</h1>
+            <details>
+                <summary>Métropole by Anomalie</summary>
+                <p>Released: June 23, 2017</p>
+                <p>Anamolie is well known for his talent on the keys! He is from Montreal, Québec. You can find his music on iTunes, Spotify, and Youtube</p>
+
+            </details>
+        </main>
+    </div>
+
+    <footer>
+        &copy; Kalen Oyphanith Feb 2020
+    </footer>
+</body></html>
